@@ -13,7 +13,6 @@ Saved
 *.xcodeproj
 *.xcworkspace
 Build
-Plugins
 Config/SteamVRBindings
 Config/steamvr_ue_editor_app.json
 !Build/*/PakBlacklist*.txt
