@@ -2,18 +2,18 @@
 #include "CoreMinimal.h"
 #include "Templates/SubclassOf.h"
 #include "UObject/Object.h"
-#include "UObject/NoExportTypes.h"
 #include "Engine/Scene.h"
 #include "UObject/NoExportTypes.h"
 #include "UObject/NoExportTypes.h"
 #include "Engine/EngineTypes.h"
+#include "UObject/NoExportTypes.h"
 #include "ELivSceneViewExtensionCaptureStage.h"
 #include "LivPluginSettings.generated.h"
 
 class ULivCaptureBase;
 class ALivCameraController;
 
-UCLASS(Blueprintable, config = Engine, DefaultConfig)
+UCLASS(Blueprintable, DefaultConfig, config = Engine)
 class LIV_API ULivPluginSettings : public UObject {
     GENERATED_BODY()
 public:
@@ -59,7 +59,7 @@ public:
     UPROPERTY(BlueprintReadWrite, Config, EditAnywhere, meta=(AllowPrivateAccess=true))
     TSoftClassPtr<ALivCameraController> CameraControllerClass;
     
-    UPROPERTY(AdvancedDisplay, Config, EditAnywhere)
+    UPROPERTY(AdvancedDisplay, BlueprintReadWrite, Config, EditAnywhere, meta=(AllowPrivateAccess=true))
     TEnumAsByte<ESceneCaptureSource> CaptureSource;
     
     UPROPERTY(AdvancedDisplay, BlueprintReadWrite, Config, EditAnywhere, meta=(AllowPrivateAccess=true))

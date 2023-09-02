@@ -1,16 +1,16 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "UWorksInterfaceCore.h"
-#include "UWorksPublishedFileID.h"
 #include "ScreenshotReadyDelegateDelegate.h"
-#include "UWorksScreenshotHandle.h"
-#include "ScreenshotRequestedDelegateDelegate.h"
 #include "UWorksSteamID.h"
+#include "ScreenshotRequestedDelegateDelegate.h"
+#include "UWorksScreenshotHandle.h"
+#include "UWorksPublishedFileID.h"
 #include "EUWorksVRScreenshotType.h"
 #include "UWorksInterfaceCoreScreenshots.generated.h"
 
-class UUWorksInterfaceCoreScreenshots;
 class UTexture2D;
+class UUWorksInterfaceCoreScreenshots;
 
 UCLASS(Blueprintable)
 class UWORKSCORE_API UUWorksInterfaceCoreScreenshots : public UUWorksInterfaceCore {

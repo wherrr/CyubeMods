@@ -1,8 +1,8 @@
 #include "UWorksInterfaceWebMicroTxn.h"
 
-class UUWorksRequestWebProcessAgreement;
-class UUWorksRequestWebRefundTxn;
 class UUWorksRequestWebQueryTxn;
+class UUWorksRequestWebRefundTxn;
+class UUWorksRequestWebProcessAgreement;
 class UUWorksRequestWebInitTxn;
 class UUWorksRequestWebGetUserInfo;
 class UUWorksRequestWebGetUserAgreementInfo;

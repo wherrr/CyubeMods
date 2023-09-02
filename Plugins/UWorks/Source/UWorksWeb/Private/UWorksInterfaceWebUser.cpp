@@ -2,8 +2,8 @@
 
 class UUWorksRequestWebResolveVanityURL;
 class UUWorksRequestWebGetUserGroupList;
-class UUWorksRequestWebGetPublisherAppOwnershipChanges;
 class UUWorksRequestWebGrantPackage;
+class UUWorksRequestWebGetPublisherAppOwnershipChanges;
 class UUWorksRequestWebGetPublisherAppOwnership;
 class UUWorksRequestWebGetPlayerSummaries;
 class UUWorksRequestWebGetPlayerBans;

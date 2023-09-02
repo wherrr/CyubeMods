@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "SetBanStatusMinimalDelegateDelegate.h"
-#include "UWorksSteamID.h"
 #include "UWorksInterfaceWeb.h"
+#include "UWorksSteamID.h"
 #include "SetMemoMinimalDelegateDelegate.h"
+#include "SetBanStatusMinimalDelegateDelegate.h"
 #include "ResetLoginTokenMinimalDelegateDelegate.h"
 #include "QueryLoginTokenMinimalDelegateDelegate.h"
 #include "GetServerSteamIDsByIPMinimalDelegateDelegate.h"
@@ -14,9 +14,9 @@
 #include "CreateAccountMinimalDelegateDelegate.h"
 #include "UWorksInterfaceWebGameServers.generated.h"
 
-class UUWorksRequestWebSetMemo;
-class UUWorksRequestWebSetBanStatus;
 class UUWorksRequestWebResetLoginToken;
+class UUWorksRequestWebSetBanStatus;
+class UUWorksRequestWebSetMemo;
 class UUWorksRequestWebQueryLoginToken;
 class UUWorksRequestWebGetServerSteamIDsByIP;
 class UUWorksRequestWebGetServerIPsBySteamID;

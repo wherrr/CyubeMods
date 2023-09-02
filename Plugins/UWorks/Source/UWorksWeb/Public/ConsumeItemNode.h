@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "ConsumeItemDelegateDelegate.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
+#include "ConsumeItemDelegateDelegate.h"
 #include "UWorksSteamItemInstanceID.h"
 #include "UWorksSteamID.h"
 #include "ConsumeItemNode.generated.h"

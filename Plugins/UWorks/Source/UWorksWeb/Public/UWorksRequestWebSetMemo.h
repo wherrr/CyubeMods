@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "SetMemoDelegateDelegate.h"
 #include "UWorksRequestWeb.h"
+#include "SetMemoDelegateDelegate.h"
 #include "SetMemoMinimalDelegateDelegate.h"
 #include "UWorksSteamID.h"
 #include "UWorksRequestWebSetMemo.generated.h"

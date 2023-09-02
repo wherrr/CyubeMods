@@ -14,8 +14,8 @@
 #include "RuntimeMeshComponentStatic.generated.h"
 
 class URuntimeMeshModifierAdjacency;
-class URuntimeMesh;
 class URuntimeMeshProviderStatic;
+class URuntimeMesh;
 class URuntimeMeshModifierNormals;
 
 UCLASS(Blueprintable, ClassGroup=Custom, meta=(BlueprintSpawnableComponent))

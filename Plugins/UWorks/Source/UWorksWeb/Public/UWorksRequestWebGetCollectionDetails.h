@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "GetCollectionDetailsDelegateDelegate.h"
 #include "UWorksRequestWeb.h"
+#include "GetCollectionDetailsDelegateDelegate.h"
 #include "GetCollectionDetailsMinimalDelegateDelegate.h"
 #include "UWorksRequestWebGetCollectionDetails.generated.h"
 

@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "GetLeaderboardEntriesDelegateDelegate.h"
 #include "UWorksRequestWeb.h"
-#include "GetLeaderboardEntriesMinimalDelegateDelegate.h"
+#include "GetLeaderboardEntriesDelegateDelegate.h"
 #include "UWorksSteamID.h"
+#include "GetLeaderboardEntriesMinimalDelegateDelegate.h"
 #include "UWorksRequestWebGetLeaderboardEntries.generated.h"
 
 UCLASS(Blueprintable)

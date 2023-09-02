@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "UWorksRequestWeb.h"
-#include "RequestNotificationsDelegateDelegate.h"
 #include "UWorksSteamID.h"
+#include "RequestNotificationsDelegateDelegate.h"
 #include "RequestNotificationsMinimalDelegateDelegate.h"
 #include "UWorksRequestWebRequestNotifications.generated.h"
 

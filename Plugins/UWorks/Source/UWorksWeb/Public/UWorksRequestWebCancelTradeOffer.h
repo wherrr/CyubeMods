@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "CancelTradeOfferMinimalDelegateDelegate.h"
 #include "UWorksRequestWeb.h"
+#include "CancelTradeOfferMinimalDelegateDelegate.h"
 #include "CancelTradeOfferDelegateDelegate.h"
 #include "UWorksRequestWebCancelTradeOffer.generated.h"
 

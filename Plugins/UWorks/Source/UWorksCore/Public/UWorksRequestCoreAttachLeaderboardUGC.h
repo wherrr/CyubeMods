@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
+#include "UWorksRequestCore.h"
 #include "EUWorksResult.h"
 #include "AttachLeaderboardUGCDelegateDelegate.h"
-#include "UWorksRequestCore.h"
 #include "AttachLeaderboardUGCMinimalDelegateDelegate.h"
 #include "UWorksSteamLeaderboard.h"
 #include "UWorksUGCHandle.h"

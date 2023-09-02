@@ -2,8 +2,8 @@
 #include "CoreMinimal.h"
 #include "UWorksRequestWeb.h"
 #include "GetServerIPsBySteamIDDelegateDelegate.h"
-#include "GetServerIPsBySteamIDMinimalDelegateDelegate.h"
 #include "UWorksSteamID.h"
+#include "GetServerIPsBySteamIDMinimalDelegateDelegate.h"
 #include "UWorksRequestWebGetServerIPsBySteamID.generated.h"
 
 UCLASS(Blueprintable)

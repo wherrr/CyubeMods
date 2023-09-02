@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
+#include "EHTTPWebComFileBytesToFileActionType.h"
 #include "Kismet/BlueprintFunctionLibrary.h"
 #include "EHTTPWebComFileUpload.h"
-#include "EHTTPWebComFileBytesToFileActionType.h"
 #include "EHTTPWebComFileUploadType.h"
 #include "httpRequest.h"
 #include "EHTTPWebComFileDownloadResumeType.h"
@@ -60,7 +60,7 @@ public:
     UFUNCTION()
     void httpRequestCompleteGoogleInfoDelegate(const FString& Filename, const int64 fileSizeInBytes, const int32 statusCode, const FString& downloadID, const FString& requestID);
     
-    UFUNCTION()
+    UFUNCTION(BlueprintCallable)
     void httpRequestCompleteDelegate(const TArray<FString>& Data, const int32 statusCode, const TArray<uint8>& byteData, const FString& requestID);
     
     UFUNCTION(BlueprintCallable)

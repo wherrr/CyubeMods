@@ -3,24 +3,24 @@
 #include "Templates/SubclassOf.h"
 #include "Kismet/BlueprintFunctionLibrary.h"
 #include "BPLowPassPeakFilter.h"
+#include "UObject/NoExportTypes.h"
+#include "UObject/NoExportTypes.h"
+#include "BPGripPair.h"
 #include "BPEuroLowPassFilter.h"
-#include "UObject/NoExportTypes.h"
 #include "Engine/NetSerialization.h"
-#include "UObject/NoExportTypes.h"
 #include "Engine/NetSerialization.h"
-#include "BPActorGripInformation.h"
 #include "Engine/NetSerialization.h"
 #include "Transform_NetQuantize.h"
 #include "EBPHMDWornState.h"
 #include "EBPHMDDeviceType.h"
 #include "InputCoreTypes.h"
+#include "BPActorGripInformation.h"
 #include "UObject/NoExportTypes.h"
-#include "BPGripPair.h"
 #include "VRExpansionFunctionLibrary.generated.h"
 
 class USplineComponent;
-class USplineMeshComponent;
 class UPrimitiveComponent;
+class USplineMeshComponent;
 class UObject;
 class AActor;
 class UGripMotionControllerComponent;
@@ -52,7 +52,7 @@ public:
     UFUNCTION(BlueprintCallable)
     static void ResetEuroSmoothingFilter(UPARAM(Ref) FBPEuroLowPassFilter& TargetEuroFilter);
     
-    UFUNCTION(BlueprintCallable)
+    UFUNCTION(BlueprintCallable, meta=(WorldContext="WorldContextObject"))
     static void NonAuthorityMinimumAreaRectangle(UObject* WorldContextObject, const TArray<FVector>& InVerts, const FVector& SampleSurfaceNormal, FVector& OutRectCenter, FRotator& OutRectRotation, float& OutSideLengthX, float& OutSideLengthY, bool bDebugDraw);
     
     UFUNCTION(BlueprintCallable, BlueprintPure)
@@ -115,7 +115,7 @@ public:
     UFUNCTION(BlueprintCallable, BlueprintPure)
     static UGripMotionControllerComponent* Conv_GripPairToMotionController(const FBPGripPair& GripPair);
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable, BlueprintPure)
     static uint8 Conv_GripPairToGripID(const FBPGripPair& GripPair);
     
     UFUNCTION(BlueprintCallable, BlueprintPure)

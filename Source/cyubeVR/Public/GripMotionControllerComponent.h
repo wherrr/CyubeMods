@@ -1,33 +1,33 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Templates/SubclassOf.h"
-#include "BPAdvancedPhysicsHandleSettings.h"
-#include "VROnControllerGripSignatureDelegate.h"
 #include "MotionControllerComponent.h"
-#include "VRGripControllerOnGripOutOfRangeDelegate.h"
+#include "VROnControllerDropSignatureDelegate.h"
+#include "InputCoreTypes.h"
+#include "VRGripControllerOnTrackingEventSignatureDelegate.h"
 #include "EVRVelocityType.h"
 #include "VRGripControllerOnProfileTransformChangedDelegate.h"
+#include "VRGripControllerOnGripOutOfRangeDelegate.h"
+#include "VROnControllerGripSignatureDelegate.h"
 #include "BPSecondaryGripInfo.h"
-#include "Transform_NetQuantize.h"
-#include "VRGripControllerOnTrackingEventSignatureDelegate.h"
-#include "VROnControllerDropSignatureDelegate.h"
-#include "EGripCollisionType.h"
-#include "BPActorGripInformation.h"
-#include "BPVRComponentPosRep.h"
 #include "UObject/NoExportTypes.h"
+#include "BPActorGripInformation.h"
+#include "IIdentifiableXRDevice.h"
+#include "BPVRComponentPosRep.h"
+#include "Transform_NetQuantize.h"
+#include "BPAdvancedPhysicsHandleSettings.h"
 #include "EBPVRResultSwitch.h"
 #include "EGripLateUpdateSettings.h"
+#include "EGripCollisionType.h"
 #include "Engine/NetSerialization.h"
 #include "EGripMovementReplicationSettings.h"
 #include "UObject/NoExportTypes.h"
-#include "InputCoreTypes.h"
-#include "IIdentifiableXRDevice.h"
 #include "GripMotionControllerComponent.generated.h"
 
-class APawn;
 class UVRGripScriptBase;
-class UPrimitiveComponent;
+class APawn;
 class USceneComponent;
+class UPrimitiveComponent;
 class UObject;
 class AActor;
 
@@ -38,7 +38,7 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     TSubclassOf<UVRGripScriptBase> DefaultGripScriptClass;
     
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Export, Transient, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, Transient, meta=(AllowPrivateAccess=true))
     UVRGripScriptBase* DefaultGripScript;
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
@@ -95,7 +95,7 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     bool bAlwaysSendTickGrip;
     
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Export, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     TArray<UPrimitiveComponent*> AdditionalLateUpdateComponents;
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, ReplicatedUsing=OnRep_ReplicatedControllerTransform, meta=(AllowPrivateAccess=true))
@@ -176,22 +176,22 @@ public:
     UFUNCTION(BlueprintCallable, Server, Unreliable, WithValidation)
     void Server_SendControllerTransform(FBPVRComponentPosRep NewTransform);
     
-    UFUNCTION(Reliable, Server, WithValidation)
+    UFUNCTION(BlueprintCallable, Reliable, Server, WithValidation)
     void Server_NotifySecondaryAttachmentChanged_Retain(uint8 GripID, const FBPSecondaryGripInfo& SecondaryGripInfo, const FTransform_NetQuantize& NewRelativeTransform);
     
-    UFUNCTION(Reliable, Server, WithValidation)
+    UFUNCTION(BlueprintCallable, Reliable, Server, WithValidation)
     void Server_NotifySecondaryAttachmentChanged(uint8 GripID, const FBPSecondaryGripInfo& SecondaryGripInfo);
     
-    UFUNCTION(Reliable, Server, WithValidation)
+    UFUNCTION(BlueprintCallable, Reliable, Server, WithValidation)
     void Server_NotifyLocalGripRemoved(uint8 GripID, const FTransform_NetQuantize& TransformAtDrop, FVector_NetQuantize100 AngularVelocity, FVector_NetQuantize100 LinearVelocity);
     
     UFUNCTION(BlueprintCallable, Reliable, Server, WithValidation)
     void Server_NotifyLocalGripAddedOrChanged(const FBPActorGripInformation& newGrip);
     
-    UFUNCTION(Reliable, Server, WithValidation)
+    UFUNCTION(BlueprintCallable, Reliable, Server, WithValidation)
     void Server_NotifyHandledTransaction(uint8 GripID);
     
-    UFUNCTION(Reliable, Server, WithValidation)
+    UFUNCTION(BlueprintCallable, Reliable, Server, WithValidation)
     void Server_NotifyDropAndSocketGrip(uint8 GripID, USceneComponent* SocketingParent, FName OptionalSocketName, const FTransform_NetQuantize& RelativeTransformToParent, bool bWeldBodies);
     
     UFUNCTION(BlueprintCallable)
@@ -340,7 +340,7 @@ public:
     UFUNCTION(BlueprintCallable, BlueprintPure)
     FTransform ConvertToControllerRelativeTransform(const FTransform& InTransform);
     
-    UFUNCTION(Client, Reliable)
+    UFUNCTION(BlueprintCallable, Client, Reliable)
     void Client_NotifyInvalidLocalGrip(UObject* LocallyGrippedObject, uint8 GripID);
     
     UFUNCTION(BlueprintCallable, BlueprintPure)

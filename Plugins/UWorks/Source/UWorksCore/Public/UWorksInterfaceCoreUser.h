@@ -1,16 +1,15 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "SteamServerConnectFailureDelegateDelegate.h"
+#include "ValidateAuthTicketResponseDelegateDelegate.h"
 #include "UWorksInterfaceCore.h"
+#include "UWorksTicketHandle.h"
 #include "SteamServersConnectedDelegateDelegate.h"
-#include "EUWorksBeginAuthSessionResult.h"
-#include "SteamServersDisconnectedDelegateDelegate.h"
-#include "UWorksSteamUser.h"
+#include "SteamServerConnectFailureDelegateDelegate.h"
 #include "ClientGameServerDenyDelegateDelegate.h"
+#include "SteamServersDisconnectedDelegateDelegate.h"
 #include "IPCFailureDelegateDelegate.h"
 #include "LicensesUpdatedDelegateDelegate.h"
-#include "EUWorksVoiceResult.h"
-#include "ValidateAuthTicketResponseDelegateDelegate.h"
+#include "EUWorksBeginAuthSessionResult.h"
 #include "MicroTxnAuthorizationResponseDelegateDelegate.h"
 #include "GetAuthSessionTicketResponseDelegateDelegate.h"
 #include "GameWebCallbackDelegateDelegate.h"
@@ -18,11 +17,12 @@
 #include "UWorksSteamID.h"
 #include "RequestStoreAuthURLMinimalDelegateDelegate.h"
 #include "RequestEncryptedAppTicketMinimalDelegateDelegate.h"
-#include "UWorksTicketHandle.h"
+#include "EUWorksVoiceResult.h"
+#include "UWorksSteamUser.h"
 #include "UWorksInterfaceCoreUser.generated.h"
 
-class UUWorksRequestCoreRequestEncryptedAppTicket;
 class UUWorksRequestCoreRequestStoreAuthURL;
+class UUWorksRequestCoreRequestEncryptedAppTicket;
 class UAudioComponent;
 class UUWorksInterfaceCoreUser;
 

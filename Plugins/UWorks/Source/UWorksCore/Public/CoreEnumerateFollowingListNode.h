@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "EnumerateFollowingListDelegateDelegate.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
-#include "EUWorksResult.h"
+#include "EnumerateFollowingListDelegateDelegate.h"
 #include "UWorksSteamID.h"
+#include "EUWorksResult.h"
 #include "CoreEnumerateFollowingListNode.generated.h"
 
 class UCoreEnumerateFollowingListNode;

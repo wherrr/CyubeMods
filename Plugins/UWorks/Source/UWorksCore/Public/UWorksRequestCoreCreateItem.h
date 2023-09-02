@@ -1,11 +1,11 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksPublishedFileID.h"
-#include "EUWorksResult.h"
 #include "UWorksRequestCore.h"
+#include "UWorksPublishedFileID.h"
+#include "EUWorksWorkshopFileType.h"
 #include "CreateItemDelegateDelegate.h"
 #include "CreateItemMinimalDelegateDelegate.h"
-#include "EUWorksWorkshopFileType.h"
+#include "EUWorksResult.h"
 #include "UWorksRequestCoreCreateItem.generated.h"
 
 UCLASS(Blueprintable)

@@ -2,8 +2,8 @@
 #include "CoreMinimal.h"
 #include "UWorksRequestWeb.h"
 #include "GetBadgesDelegateDelegate.h"
-#include "GetBadgesMinimalDelegateDelegate.h"
 #include "UWorksSteamID.h"
+#include "GetBadgesMinimalDelegateDelegate.h"
 #include "UWorksRequestWebGetBadges.generated.h"
 
 UCLASS(Blueprintable)

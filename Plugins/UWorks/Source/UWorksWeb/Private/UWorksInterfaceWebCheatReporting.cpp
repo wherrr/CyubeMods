@@ -1,8 +1,8 @@
 #include "UWorksInterfaceWebCheatReporting.h"
 
 class UUWorksRequestWebStartSecureMultiplayerSession;
-class UUWorksRequestWebRequestPlayerGameBan;
 class UUWorksRequestWebRequestVacStatusForUser;
+class UUWorksRequestWebRequestPlayerGameBan;
 class UUWorksRequestWebReportPlayerCheating;
 class UUWorksRequestWebReportCheatData;
 class UUWorksRequestWebRemovePlayerGameBan;

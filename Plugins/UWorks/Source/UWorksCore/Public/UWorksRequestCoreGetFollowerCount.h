@@ -1,10 +1,10 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "EUWorksResult.h"
-#include "GetFollowerCountMinimalDelegateDelegate.h"
-#include "UWorksRequestCore.h"
-#include "UWorksSteamID.h"
 #include "GetFollowerCountDelegateDelegate.h"
+#include "UWorksRequestCore.h"
+#include "EUWorksResult.h"
+#include "UWorksSteamID.h"
+#include "GetFollowerCountMinimalDelegateDelegate.h"
 #include "UWorksRequestCoreGetFollowerCount.generated.h"
 
 UCLASS(Blueprintable)

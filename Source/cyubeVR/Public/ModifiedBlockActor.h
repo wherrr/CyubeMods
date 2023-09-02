@@ -1,13 +1,13 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
-#include "BlockInfoBP.h"
 #include "EBlockTypeBP.h"
+#include "BlockInfoBP.h"
 #include "ModifiedBlockActor.generated.h"
 
 class UMaterialInstance;
-class UMaterialInstanceDynamic;
 class UStaticMeshComponent;
+class UMaterialInstanceDynamic;
 class AChunkManager;
 
 UCLASS(Blueprintable)
@@ -32,7 +32,7 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     UMaterialInstanceDynamic* MaterialInstanceForDamage;
     
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Export, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     UStaticMeshComponent* BlockMesh;
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

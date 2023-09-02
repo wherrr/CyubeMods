@@ -2,12 +2,12 @@
 #include "Templates/SubclassOf.h"
 
 class USplineComponent;
-class USplineMeshComponent;
 class UPrimitiveComponent;
+class USplineMeshComponent;
 class UObject;
 class AActor;
-class USceneComponent;
 class UGripMotionControllerComponent;
+class USceneComponent;
 
 void UVRExpansionFunctionLibrary::UpdatePeakLowPassFilter(FBPLowPassPeakFilter& TargetPeakFilter, FVector newSample) {
 }

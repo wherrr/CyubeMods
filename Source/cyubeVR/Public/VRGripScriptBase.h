@@ -2,16 +2,16 @@
 #include "CoreMinimal.h"
 #include "Templates/SubclassOf.h"
 #include "UObject/Object.h"
-#include "Engine/EngineTypes.h"
+#include "EBPVRResultSwitch.h"
 #include "EGSTransformOverrideType.h"
 #include "BPActorGripInformation.h"
 #include "UObject/NoExportTypes.h"
-#include "EBPVRResultSwitch.h"
+#include "Engine/EngineTypes.h"
 #include "VRGripScriptBase.generated.h"
 
-class AActor;
 class UGripMotionControllerComponent;
 class USceneComponent;
+class AActor;
 class UPrimitiveComponent;
 class UVRGripScriptBase;
 
@@ -65,7 +65,7 @@ public:
     UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
     void OnGrip(UGripMotionControllerComponent* GrippingController, const FBPActorGripInformation& GripInformation);
     
-    UFUNCTION(BlueprintNativeEvent)
+    UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
     void OnEndPlay(const EEndPlayReason::Type EndPlayReason);
     
     UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
@@ -95,7 +95,7 @@ public:
     UFUNCTION(BlueprintCallable, BlueprintPure)
     FTransform GetGripTransform(const FBPActorGripInformation& Grip, const FTransform& ParentTransform);
     
-    UFUNCTION(BlueprintCallable)
+    UFUNCTION(BlueprintCallable, meta=(WorldContext="WorldContextObject"))
     static UVRGripScriptBase* GetGripScriptByClass(UObject* WorldContextObject, TSubclassOf<UVRGripScriptBase> GripScriptClass, EBPVRResultSwitch& Result);
     
     UFUNCTION(BlueprintCallable)

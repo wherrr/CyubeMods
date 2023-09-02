@@ -4,8 +4,8 @@
 #include "EBlockTypeBP.h"
 #include "MeshObject.generated.h"
 
-class UBoxComponent;
 class UStaticMeshComponent;
+class UBoxComponent;
 
 UCLASS(Blueprintable)
 class CYUBEVR_API AMeshObject : public AReceiveLightActor {
@@ -23,10 +23,10 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     bool bDoInstantDestroy;
     
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Export, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     UBoxComponent* OverlapBoundingBox;
     
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Export, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     TArray<UStaticMeshComponent*> PreviewMaterialIgnoreComponents;
     
     AMeshObject();

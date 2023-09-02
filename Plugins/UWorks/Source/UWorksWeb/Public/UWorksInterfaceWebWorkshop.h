@@ -1,12 +1,12 @@
 #pragma once
 #include "CoreMinimal.h"
+#include "UWorksPartnerAccounts.h"
 #include "UWorksInterfaceWeb.h"
 #include "UWorksAssociatedWorkshopFiles.h"
-#include "GetFinalizedContributorsMinimalDelegateDelegate.h"
-#include "UWorksPartnerAccounts.h"
-#include "UWorksLanguages.h"
-#include "SetItemPaymentRulesMinimalDelegateDelegate.h"
 #include "PopulateItemDescriptionsMinimalDelegateDelegate.h"
+#include "SetItemPaymentRulesMinimalDelegateDelegate.h"
+#include "GetFinalizedContributorsMinimalDelegateDelegate.h"
+#include "UWorksLanguages.h"
 #include "GetItemDailyRevenueMinimalDelegateDelegate.h"
 #include "UWorksInterfaceWebWorkshop.generated.h"
 

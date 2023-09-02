@@ -1,10 +1,10 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
 #include "GameFramework/Character.h"
-#include "UObject/NoExportTypes.h"
-#include "LightReceiveInterface.h"
 #include "Engine/EngineTypes.h"
+#include "LightReceiveInterface.h"
+#include "UObject/NoExportTypes.h"
+#include "UObject/NoExportTypes.h"
 #include "DeerCPP.generated.h"
 
 class UMeshComponent;
@@ -15,7 +15,7 @@ UCLASS(Blueprintable)
 class CYUBEVR_API ADeerCPP : public ACharacter, public ILightReceiveInterface {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Export, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     TArray<UMeshComponent*> Meshes;
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
@@ -49,7 +49,7 @@ public:
     UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
     void StartMoving();
     
-    UFUNCTION(BlueprintNativeEvent)
+    UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
     void SetMobilityAllEvent(EComponentMobility::Type NewMobility);
     
     UFUNCTION(BlueprintCallable)

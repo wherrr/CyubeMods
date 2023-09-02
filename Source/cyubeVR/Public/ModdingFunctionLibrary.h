@@ -22,8 +22,11 @@ private:
     UFUNCTION(BlueprintCallable)
     static void GetModTutorials(TArray<FModTutorialEntry>& ModTutorials);
     
-    UFUNCTION(BlueprintCallable, BlueprintPure)
+    UFUNCTION(BlueprintCallable, BlueprintPure, meta=(WorldContext="WorldContextObject"))
     static AInventory* GetInventoryReference(const UObject* WorldContextObject);
+    
+    UFUNCTION(BlueprintCallable)
+    static void GetAllMods(bool OnlyLocal, bool OnlyWorkshop, TArray<FString>& Paths, TArray<bool>& ValidProperties, TArray<FString>& DisplayNames, TArray<FString>& InternalNames, TArray<FString>& PreviewImages);
     
 };
 

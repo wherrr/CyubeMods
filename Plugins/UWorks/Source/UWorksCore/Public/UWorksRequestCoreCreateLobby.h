@@ -1,11 +1,11 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "EUWorksResult.h"
 #include "UWorksRequestCore.h"
-#include "UWorksSteamID.h"
 #include "CreateLobbyDelegateDelegate.h"
 #include "CreateLobbyMinimalDelegateDelegate.h"
 #include "EUWorksLobbyType.h"
+#include "UWorksSteamID.h"
+#include "EUWorksResult.h"
 #include "UWorksRequestCoreCreateLobby.generated.h"
 
 UCLASS(Blueprintable)

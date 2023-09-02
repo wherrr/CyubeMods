@@ -2,8 +2,8 @@
 #include "CoreMinimal.h"
 #include "UWorksRequestWeb.h"
 #include "EnumerateUserSubscribedFilesDelegateDelegate.h"
-#include "EnumerateUserSubscribedFilesMinimalDelegateDelegate.h"
 #include "UWorksSteamID.h"
+#include "EnumerateUserSubscribedFilesMinimalDelegateDelegate.h"
 #include "UWorksRequestWebEnumerateUserSubscribedFiles.generated.h"
 
 UCLASS(Blueprintable)

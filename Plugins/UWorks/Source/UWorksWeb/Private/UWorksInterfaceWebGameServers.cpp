@@ -1,7 +1,7 @@
 #include "UWorksInterfaceWebGameServers.h"
 
-class UUWorksRequestWebSetMemo;
 class UUWorksRequestWebSetBanStatus;
+class UUWorksRequestWebSetMemo;
 class UUWorksRequestWebResetLoginToken;
 class UUWorksRequestWebQueryLoginToken;
 class UUWorksRequestWebGetServerSteamIDsByIP;

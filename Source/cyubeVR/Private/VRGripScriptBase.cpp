@@ -3,9 +3,9 @@
 
 class UGripMotionControllerComponent;
 class USceneComponent;
-class UPrimitiveComponent;
-class AActor;
 class UObject;
+class AActor;
+class UPrimitiveComponent;
 class UVRGripScriptBase;
 
 bool UVRGripScriptBase::Wants_DenyTeleport_Implementation(UGripMotionControllerComponent* Controller) {

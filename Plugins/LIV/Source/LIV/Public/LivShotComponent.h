@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Components/SceneComponent.h"
-#include "LivShotCutDelegateDelegate.h"
 #include "LivShotTickDelegateDelegate.h"
+#include "LivShotCutDelegateDelegate.h"
 #include "LivShotComponent.generated.h"
 
 class ALivCameraController;

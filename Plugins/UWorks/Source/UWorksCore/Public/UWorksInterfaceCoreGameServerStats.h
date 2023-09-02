@@ -1,10 +1,10 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "UWorksInterfaceCore.h"
-#include "ServerRequestUserStatsMinimalDelegateDelegate.h"
 #include "GSStatsUnloadedDelegateDelegate.h"
 #include "UWorksSteamID.h"
 #include "ServerStoreUserStatsMinimalDelegateDelegate.h"
+#include "ServerRequestUserStatsMinimalDelegateDelegate.h"
 #include "UWorksInterfaceCoreGameServerStats.generated.h"
 
 class UUWorksInterfaceCoreGameServerStats;

@@ -1,15 +1,15 @@
 #include "UWorksInterfaceCoreUserStats.h"
 
-class UUWorksRequestCoreRequestGlobalAchievementPercentages;
-class UUWorksRequestCoreUploadLeaderboardScore;
 class UUWorksRequestCoreRequestUserStats;
+class UUWorksRequestCoreUploadLeaderboardScore;
 class UUWorksRequestCoreRequestGlobalStats;
+class UUWorksRequestCoreDownloadLeaderboardEntries;
+class UUWorksRequestCoreRequestGlobalAchievementPercentages;
 class UUWorksInterfaceCoreUserStats;
 class UUWorksRequestCoreGetNumberOfCurrentPlayers;
 class UTexture2D;
 class UUWorksRequestCoreFindOrCreateLeaderboard;
 class UUWorksRequestCoreFindLeaderboard;
-class UUWorksRequestCoreDownloadLeaderboardEntries;
 class UUWorksRequestCoreDownloadLeaderboardEntriesForUsers;
 class UUWorksRequestCoreAttachLeaderboardUGC;
 

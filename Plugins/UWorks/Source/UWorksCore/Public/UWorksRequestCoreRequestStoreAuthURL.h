@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "RequestStoreAuthURLDelegateDelegate.h"
-#include "UWorksRequestCore.h"
 #include "RequestStoreAuthURLMinimalDelegateDelegate.h"
+#include "UWorksRequestCore.h"
+#include "RequestStoreAuthURLDelegateDelegate.h"
 #include "UWorksRequestCoreRequestStoreAuthURL.generated.h"
 
 UCLASS(Blueprintable)

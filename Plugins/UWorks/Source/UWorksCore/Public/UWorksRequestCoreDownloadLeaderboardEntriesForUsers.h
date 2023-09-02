@@ -2,9 +2,9 @@
 #include "CoreMinimal.h"
 #include "UWorksRequestCore.h"
 #include "DownloadLeaderboardEntriesForUsersDelegateDelegate.h"
+#include "UWorksSteamLeaderboard.h"
 #include "DownloadLeaderboardEntriesForUsersMinimalDelegateDelegate.h"
 #include "UWorksSteamID.h"
-#include "UWorksSteamLeaderboard.h"
 #include "UWorksSteamLeaderboardEntries.h"
 #include "UWorksRequestCoreDownloadLeaderboardEntriesForUsers.generated.h"
 

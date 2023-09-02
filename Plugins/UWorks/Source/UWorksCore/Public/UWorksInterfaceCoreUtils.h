@@ -1,14 +1,14 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksInterfaceCore.h"
 #include "IPCountryDelegateDelegate.h"
-#include "LowBatteryPowerDelegateDelegate.h"
+#include "UWorksInterfaceCore.h"
+#include "EUWorksUniverse.h"
 #include "SteamShutdownDelegateDelegate.h"
+#include "LowBatteryPowerDelegateDelegate.h"
 #include "GamepadTextInputDismissedDelegateDelegate.h"
-#include "EUWorksNotificationPosition.h"
 #include "EUWorksGamepadTextInputLineMode.h"
 #include "EUWorksGamepadTextInputMode.h"
-#include "EUWorksUniverse.h"
+#include "EUWorksNotificationPosition.h"
 #include "UWorksInterfaceCoreUtils.generated.h"
 
 class UUWorksInterfaceCoreUtils;

@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
+#include "RecordOfflinePlaytimeDelegateDelegate.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
 #include "UWorksSteamID.h"
-#include "RecordOfflinePlaytimeDelegateDelegate.h"
 #include "UWorksPlaySessions.h"
 #include "RecordOfflinePlaytimeNode.generated.h"
 
