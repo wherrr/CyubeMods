@@ -12,7 +12,9 @@ Saved
 *.suo
 *.xcodeproj
 *.xcworkspace
-Build
+Build/*
+!Build/*/PakBlacklist*.txt
+Content/*
+!Content/*wherr*
 Config/SteamVRBindings
 Config/steamvr_ue_editor_app.json
-!Build/*/PakBlacklist*.txt
